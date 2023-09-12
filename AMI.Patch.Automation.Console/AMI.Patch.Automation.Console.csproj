@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.AutoScaling" Version="3.7.202.18" />
+    <PackageReference Include="AWSSDK.EC2" Version="3.7.209" />
+    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.200.24" />
+  </ItemGroup>
+
+</Project>
