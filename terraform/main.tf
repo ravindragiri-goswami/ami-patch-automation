@@ -138,16 +138,16 @@ resource "aws_launch_configuration" "example" {
     # export YOUR_ENV_VAR=value
 
     # Clone your .NET Web API repository (replace with your actual repository URL)
-    git clone https://github.com/your-repo/your-dotnet-web-api.git /app
+    git clone https://github.com/ravindragiri-goswami/ami-patch-automation.git /app
 
     # Navigate to the API directory
-    cd /app
+    cd /app/Weather.API
 
     # Build and publish the .NET Core 6 Web API
-    dotnet publish -c Release -o /app/published
+    dotnet publish -c Release -o /app/Weather.API/published
 
     # Start the .NET Core 6 Web API as a background process
-    nohup dotnet /app/published/YourApi.dll &
+    nohup dotnet /app/Weather.API/published/Weather.API.dll &
 
     # Optionally, configure any additional settings or environment variables here
 

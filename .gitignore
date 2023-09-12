@@ -12,3 +12,5 @@
 /terraform/terraform.tfstate.backup
 /Weather.API/bin/Debug/net6.0
 /Weather.API/obj
+/Weather.API/bin/Release/net6.0
+/Weather.API/nohup.out
